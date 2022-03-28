@@ -1,0 +1,45 @@
+.stat {
+  padding: 80px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+  &__col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 58px;
+    line-height: 80px;
+    font-weight: 700;
+    color: $primary-color;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-color;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+  }
+  @media screen and (max-width: 1023.98px) {
+    padding: 60px 0;
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px;
+    }
+    &__title {
+      font-size: 50px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

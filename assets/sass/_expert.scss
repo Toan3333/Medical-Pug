@@ -1,0 +1,37 @@
+.expert {
+  padding: 88px 0;
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: 30px;
+  }
+  &__content {
+    max-width: 507px;
+    width: 100%;
+  }
+  &__images {
+    width: 100%;
+  }
+  &__desc {
+    padding-right: 160px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 35px;
+  }
+  &__more {
+    line-height: 24px;
+    color: $primary-color;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+  }
+  @media screen and (max-width: 767.98px) {
+    padding: 50px 0;
+    &__main {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}

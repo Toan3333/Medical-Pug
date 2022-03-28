@@ -1,0 +1,53 @@
+.footer {
+  padding: 50px 0;
+  &__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-gap: 30px;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $text-color;
+    letter-spacing: 0.1px;
+    margin-bottom: 20px;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__link {
+    color: $grey;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  &__box {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+  &__item--text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  @media screen and (max-width: 1023.98px) {
+    &__main {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__main {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

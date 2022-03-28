@@ -1,0 +1,48 @@
+mixin heroItem(icon, title, desc)
+    .hero__item 
+        .hero__icon 
+         img(src= icon)
+        h3.hero__title--heading= title
+        p.hero__desc--item= desc
+mixin statItem(title,text)
+        .stat__col 
+            h1.stat__title= title 
+            h5.stat__text= text 
+mixin ourItem(image, heading, rating, title, desc, sale, number,  priceOld , priceNew, more)
+    .our__box
+        .our__image
+            img(src= image)
+        .our__content 
+            .our__main 
+                .our__heading= heading 
+                img(src= rating)
+            h5.our__title= title 
+            p.our__desc= desc
+            .our__sale
+                img(src= sale)
+                .our__sale--number= number 
+            .our__price
+                .our__price__old= priceOld
+                .our__price__new= priceNew
+            a.our__more= more 
+
+mixin leadItem(rating, text, avatar, name, job)
+    .lead__card
+        img(src= rating)
+        p.lead__desc=text
+        .lead__info
+            img(src= avatar)
+            .lead__testimonial
+                .lead__name= name
+                .lead__job= job
+mixin teamItem(image, name, job, face, instagram, twitter)
+    .team__card
+        img(src= image)
+        .team__content
+            h5.team__name= name
+            .team__job= job
+            .team__social
+                img(src= face)
+                img(src= instagram)
+                img(src= twitter)
+

@@ -1,0 +1,46 @@
+.app {
+  background-color: white;
+}
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title--section {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  color: $text-color;
+  padding-top: 35px;
+  position: relative;
+  margin-bottom: 35px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 94px;
+    height: 7px;
+    background-color: $primary-color;
+    top: 0;
+  }
+}
+.section--heading {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $primary-color;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+
+.section__heading__item {
+  max-width: 463px;
+  text-align: left;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 767.98px) {
+  .title--section {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}

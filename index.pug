@@ -1,0 +1,25 @@
+doctype html
+block mixins
+    include ./assets/views/mixins
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Medical
+        link(rel="stylesheet", href="./assets/css/style.css")
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap' rel='stylesheet')
+    body
+        .app
+            include ./assets/views/header
+            include ./assets/views/hero
+            include ./assets/views/stat
+            include ./assets/views/expert
+            include ./assets/views/our
+            include ./assets/views/lead
+            include ./assets/views/team
+            include ./assets/views/newsletter
+            include ./assets/views/footer
+
